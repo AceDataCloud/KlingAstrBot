@@ -1,0 +1,13 @@
+name: astrbot_plugin_kling_acedatacloud
+display_name: Kling by Ace Data Cloud
+short_desc: Generate one Kling V3 video and retrieve its final result in chat.
+desc: Submit one Kling V3 text or first-frame video through your Ace Data Cloud account, then query the same task ID for its final URL.
+version: 0.1.0
+author: acedatacloud
+repo: https://github.com/AceDataCloud/KlingAstrBot
+astrbot_version: ">=4.28.2,<5"
+tags:
+  - Kling
+  - AI video
+  - video generation
+  - Ace Data Cloud

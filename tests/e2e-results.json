@@ -1,0 +1,37 @@
+{
+  "environment": {
+    "astrbot_version": "4.28.2",
+    "installation": "isolated editable local plugin installation",
+    "chat_model": "gpt-4.1-mini through the generic OpenAI-compatible source",
+    "marketplace_installation": "not tested; AstrBot Cloud listing pending"
+  },
+  "primary_case": {
+    "model": "kling-v3",
+    "mode": "std",
+    "duration_requested": 3,
+    "aspect_ratio_requested": "16:9",
+    "generate_audio_requested": false,
+    "generation_tool": "kling_generate_video",
+    "generation_tool_calls": 1,
+    "lookup_tool": "kling_get_task",
+    "lookup_tool_calls_in_chat": 2,
+    "lookup_note": "The initial lookup encountered a flat V3 task result and exposed no final video. The parser was fixed and the same task ID was queried again. No second generation was submitted.",
+    "task_id": "2e7ca4d9-f87b-4780-9d87-27bc0ed48a7f",
+    "trace_id": "d86b1d68-4fe3-47fd-8c20-36ecd86973c3",
+    "terminal_status": "succeeded",
+    "video_count": 1,
+    "video_url": "https://platform2.cdn.acedata.cloud/kling/2e7ca4d9-f87b-4780-9d87-27bc0ed48a7f.mp4",
+    "media_http_status": 200,
+    "media_content_type": "video/mp4",
+    "video_codec": "h264",
+    "audio_tracks": 0,
+    "video_width": 1280,
+    "video_height": 720,
+    "duration_seconds": 3.042,
+    "usage_api_path": "/kling/videos",
+    "usage_status_code": 200,
+    "task_list_amount_credits": 2.52,
+    "usage_deducted_credits": 2.268
+  },
+  "scope_limit": "Kling V3 text-to-video and same-task lookup were run through AstrBot chat. Start/end frames and other durations or modes were validated structurally but not generated. Official market installation remains open."
+}
