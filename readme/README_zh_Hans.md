@@ -2,7 +2,7 @@
 
 通过您自己的 Ace Data Cloud 账号，在 AstrBot 对话中生成一条 Kling V3 视频。`kling_generate_video` 提交一次文生或首帧图生视频任务，`kling_get_task` 用同一个任务 ID 查询最终结果。
 
-[English guide](../README.md) · [Kling 视频接口](https://platform.acedata.cloud/documents/kling-videos) · [Kling 任务接口](https://platform.acedata.cloud/documents/kling-tasks) · [当前价格](https://platform.acedata.cloud/services/kling)
+[English guide](../README.md) · [Kling 视频接口](https://platform.acedata.cloud/documents/kling-videos?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=klingastrbot_readme_documents_kling_videos) · [Kling 任务接口](https://platform.acedata.cloud/documents/kling-tasks?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=klingastrbot_readme_documents_kling_tasks) · [当前价格](https://platform.acedata.cloud/services/kling?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=klingastrbot_readme_services_kling)
 
 ## 查找与安装
 
@@ -12,7 +12,9 @@
 
 ## 配置密钥
 
-在 [Ace Data Cloud 应用管理](https://platform.acedata.cloud/console/applications)复制生成 API Key，或创建同时允许 `/kling/videos` 与 `/kling/tasks` 的 Key。提交前核对当前每秒价格、时长和余额。将 Key 填入插件的 **Ace Data Cloud generation API key with Kling access** 配置项，不要添加 `Bearer `，也不要使用 `platform-...` 管理令牌。AstrBot WebUI 会遮蔽显示此字段，但原值保存在数据目录中，请保护该目录。
+首次使用请先注册并登录；如果应用页还没有通用应用，点击 **初始化通用应用（Initialize General Application）**，再按下面步骤管理密钥。
+
+在 [Ace Data Cloud 应用管理](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=klingastrbot_readme_api_key)复制生成 API Key，或创建同时允许 `/kling/videos` 与 `/kling/tasks` 的 Key。提交前核对当前每秒价格、时长和余额。将 Key 填入插件的 **Ace Data Cloud generation API key with Kling access** 配置项，不要添加 `Bearer `，也不要使用 `platform-...` 管理令牌。AstrBot WebUI 会遮蔽显示此字段，但原值保存在数据目录中，请保护该目录。
 
 选择支持工具调用的对话模型，并在当前对话的 profile 与 persona 中允许两个 Kling 工具。
 

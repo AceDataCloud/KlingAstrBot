@@ -2,7 +2,7 @@
 
 Generate one Kling V3 video in an AstrBot conversation through your own Ace Data Cloud account. `kling_generate_video` submits one text or first-frame video job; `kling_get_task` queries the same task until its final video is ready.
 
-[简体中文指南](readme/README_zh_Hans.md) · [Kling Videos API](https://platform.acedata.cloud/documents/kling-videos) · [Kling Tasks API](https://platform.acedata.cloud/documents/kling-tasks) · [Current prices](https://platform.acedata.cloud/services/kling)
+[简体中文指南](readme/README_zh_Hans.md) · [Kling Videos API](https://platform.acedata.cloud/documents/kling-videos?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=klingastrbot_readme_documents_kling_videos) · [Kling Tasks API](https://platform.acedata.cloud/documents/kling-tasks?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=klingastrbot_readme_documents_kling_tasks) · [Current prices](https://platform.acedata.cloud/services/kling?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=klingastrbot_readme_services_kling)
 
 ## Find and install
 
@@ -12,7 +12,9 @@ The official AstrBot Cloud listing is pending. After the source release is merge
 
 ## Configure your key
 
-In [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications), copy a generation API key from your General application or create a key that permits both `/kling/videos` and `/kling/tasks`. Check current per-second pricing, duration, and balance before submitting. Paste the key into the plugin's **Ace Data Cloud generation API key with Kling access** setting. Do not add `Bearer ` or use a `platform-...` management token. AstrBot masks the field in WebUI but stores the original value in its data directory, which should be protected.
+New account? Register and sign in first. If the Applications page has no General application yet, choose **Initialize General Application**, then continue with the key steps below.
+
+In [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=klingastrbot_readme_api_key), copy a generation API key from your General application or create a key that permits both `/kling/videos` and `/kling/tasks`. Check current per-second pricing, duration, and balance before submitting. Paste the key into the plugin's **Ace Data Cloud generation API key with Kling access** setting. Do not add `Bearer ` or use a `platform-...` management token. AstrBot masks the field in WebUI but stores the original value in its data directory, which should be protected.
 
 Select a chat model that supports tool calling. Allow both Kling tools in the conversation's profile and persona.
 
